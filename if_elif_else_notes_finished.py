@@ -117,5 +117,4 @@ else:
     print("\nSorry we don't have that flavor. Here's your Pistachio.")
 
 
-
-input("Press enter to exit.")
+input("\nPress enter to exit.")
