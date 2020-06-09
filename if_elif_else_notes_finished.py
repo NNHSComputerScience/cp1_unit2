@@ -3,26 +3,31 @@
 
 # A) MODULES are files that contain code you can import to use in your own program.
 
-# The random module contains functions related to generating pseudorandom numbers.
-#   Import like this:
+# The RANDOM MODULE contains functions related to generating pseudorandom numbers.
+#   Documentation here: https://docs.python.org/3/library/random.html
+
+#   Import entire module like this:
 import random
 
 # randint() function:
 #   Requires 2 int arguments & returns random # between those 2 values (inclusive).
-print (random.randint(1,10))
+print(random.randint(1,10))
 
 # randrange() function:
 #   Requires 1 int argument & returns random # from a range created from 0 to the int (exclusive).
-print (random.randrange(10))      # 0-9; numbers start from 0!
-print (random.randrange(10)+1)    # 1-10
+print(random.randrange(10))      # 0-9; numbers start from 0!
+print(random.randrange(10)+1)    # 1-10
+
+#   Can also call with 2 arguments: start and stop (exclusive)
+print(random.randrange(1, 11)
 
 # Challenge: Dice Challenge 1
 #   Create 2 die variables.  Simulate rolling each die by generating a
 #   random number between 1 and 6 and printing it. Use 2 diff functions.
 die1 = random.randint(1,6)
 die2 = random.randrange(6)+1
-print ("Roll 1 =", die1)
-print ("Roll 2 =", die2)
+print("Roll 1 =", die1)
+print("Roll 2 =", die2)
 
 # -------------------------------------------------------------
 # B) if statement (binary bypass)
