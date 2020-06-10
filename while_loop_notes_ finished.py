@@ -1,9 +1,9 @@
 # while loop notes
 '''
 while loop, written in English (PSEUDOCODE):
-test the LOOP CONDITION
+while statement tests the LOOP CONDITION
     while condition is True, run this block of code (LOOP BODY)
-    if condition becomes false (SENTINEL VALUE is met), this block is skipped
+    if condition becomes false (SENTINEL VALUE is met), this block is skipped and loop ends
 loop ends and program continues sequentially
 
 # WHILE LOOP - control structure that continues to execute a block of code while a condition is True.
@@ -17,20 +17,20 @@ loop ends and program continues sequentially
 #   Keeps track of number of times loop is executed.
 counter = 0
 print ("Let's count to 100!")
-input("Press enter to start the counter.")
+input("\nPress enter to start the counter.\n")
 while counter < 101:    # loop condition; sentinel value is 101 and greater
     print ("The count is at: ", counter) # start of loop body
     counter += 1        # updating the looping variable
 
-# Common mistake: not updating the looping variable (results in infinite loop)
+# Common mistake: not updating the looping variable (results in an infinite loop)
 
-input("Press enter to exit.\n\n\n")
+input("\nPress enter to continue.\n")
 
 # Countdown Challenge (on own)
 #   Make a counter that counts down from 10 and then says "BLAST OFF!" once 0 is displayed
 
 print("Let's count down to BLAST OFF!")
-input("Press enter to start the countdown.")
+input("\nPress enter to start the countdown.\n")
 count = 10
 
 while count > 0:
@@ -39,7 +39,7 @@ while count > 0:
 
 print("BLAST OFF!")
 
-input("\nPress enter to exit.")
+input("\nPress enter to continue.\n")
 
 # Count by 5's Challenge(on own)
 #   Count 0-100 by 5's
@@ -49,8 +49,8 @@ input("\nPress enter to exit.")
 count = 0
 end = 100
 
-print("\n\nLet's count to 100 by 5's!")
-input("Press enter to start the counter.")
+print("\nLet's count to 100 by 5's!")
+input("\nPress enter to start the counter.\n")
  
 while count <= end:
     print("The count is at: ", count)
@@ -58,7 +58,7 @@ while count <= end:
         print("Half-way there!")
     count += 5
 
-input("\nPress enter to exit.\n")
+input("\nPress enter to continue.\n")
 
 # die_roller Challenge (partner)
 #   Guess how many rolls it takes to roll a 5?
@@ -84,7 +84,7 @@ if guess == rolls:
 else:
     print("I'm sorry, you guessed incorrectly.")
 
-input("\nPress enter to exit.")
+input("\nPress enter to continue.\n")
 
 # die_roller2 Challenge (partner)
 #   Display how many evens after 5 rolls of a die.
@@ -93,15 +93,10 @@ evens = 0
 while count < 6:
     roll = random.randint(1,6)
     print("You rolled a", roll)
-    if roll % 2 == 0:
+    if roll % 2 == 0: # if the roll is an even number
         evens += 1
     count += 1
 
 print("You rolled", evens, "even numbers")
 
 input("\nPress enter to exit.")
-
-
-
-
-
