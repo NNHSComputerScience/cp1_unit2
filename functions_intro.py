@@ -1,7 +1,7 @@
 """
-# demo of a function for help in understanding the online textbook
+demo of a function for help in understanding the online textbook
 
-# FUNCTION - a named sequence of statements that belong together and accomplish a task.
+FUNCTION - a named sequence of statements that belong together and accomplish a task.
 
 The syntax for a function definition is:
 def name( parameters (optional) ):
@@ -10,7 +10,21 @@ def name( parameters (optional) ):
 """
 
 # FUNCTION DEFIITION - creating your own function
+import random
+def roll(sides):
+    """rolls a sides-sided die and returns the resulting value"""
+    num = random.randint(1,sides)
+    return num # returns a value and ends function execution
 
+# using (CALLING) our new function 
+print(roll(6))
+print(roll(6))
+
+print(roll(12))
+print(roll(12))
+
+
+# example 2
 def calc_grade(percentage): 
     """takes in a percentage and returns the appropriate letter grade"""
     if(percentage >= 90):
