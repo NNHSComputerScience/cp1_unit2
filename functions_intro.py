@@ -12,7 +12,7 @@ def name( parameters (optional) ):
 # FUNCTION DEFIITION - creating your own function
 
 def calc_grade(percentage): 
-    """takes in a percentage and prints the appropriate letter grade"""
+    """takes in a percentage and returns the appropriate letter grade"""
     if(percentage >= 90):
         letter_grade = "A"
     # this overchecks the value of percentage
