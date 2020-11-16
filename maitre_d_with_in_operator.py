@@ -8,17 +8,17 @@
 
   'in' operator
     Searches in a sequence(e.g. a string is a sequence of characters) for a 
-      value and returns True if found.
+      value and returns True if found. May be combined with the 'not' operator.
 ''' 
 # e.g. the following prints that there's a fun in fundamentals:
 if "fun" in "fundamentals":
     print("There's a 'fun' in fundamentals.")
         
 # e.g. the following prints that there's no i in team: 
-if "i" in "team":
-    print("There's an 'i' in team.")
+if "i" not in "team":
+    print("There's no 'i' in team.")
 else:
-    print("There's no 'i' in team.")  
+    print("There's an 'i' in team.")  
 ''' 
 CHALLENGE: Finish the program to check if the patron is a doctor 
           (check for "Dr." and "Doctor").  If they are, tell them that 
