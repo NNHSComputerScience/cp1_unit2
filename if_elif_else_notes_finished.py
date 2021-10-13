@@ -54,7 +54,7 @@ COMPARISON OPERATORS (aka RELATIONAL OPERATORS) - compare the values on either
         <= Evaluates to True if the right value is greater than or equal to the left.
 """
 
-# Challenge: Simple if
+# Challenge: Simple if (BINARY BYPASS - one action associated with an condition)
 #   Generate a random number, 1-99, and print "You generated a 2 digit number!"
 #   if the random number generated is greater than 9.
 num = random.randint(1,99)
@@ -63,7 +63,7 @@ if num > 9:
     print("\nYou generated a 2 digit number!")
 
 # -------------------------------------------------------------
-# C)if - else (binary choice)
+# C)if - else (BINARY CHOICE - two actions associated with a condition)
 #   If block executes if condition is true;
 #   else block executes if condition is false.
 password = input("Please enter your password: ")
@@ -101,12 +101,12 @@ else:
 # What would be a better way to handle variation in the password input?
 
 # Challenge: Ice Cream Challenge
-#   Remember our ice cream algorithm? Recreate your own below, e.g.:
+#   Remember our ice cream algorithm? Recreate your own below using at least 4 flavors, e.g.:
 #   get flavor from user.
 #   if user wants vanilla, "You get Vanilla"
 #   elif user wants chocolate, "You get Chocolate"
 #   elif user wants strawberry, "You get Strawberry"
-#   else, "Sorry we don't have that flavor. Here's your Pistachio."
+#   else, "Sorry we don't have <insert flavor>. Here's your Pistachio."
 
 flavor = input("What flavor of ice cream would you like?").title()
 
@@ -117,7 +117,7 @@ elif flavor == "Chocolate":
 elif flavor == "Strawberry":
     print("\nYou get Strawberry")
 else:
-    print("\nSorry we don't have that flavor. Here's your Pistachio.")
+    print(f"\nSorry we don't have {flavor}. Here's your Pistachio.")
 
 
 input("\nPress enter to exit.")
