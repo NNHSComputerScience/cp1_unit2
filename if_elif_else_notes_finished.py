@@ -119,5 +119,20 @@ elif flavor == "Strawberry":
 else:
     print(f"\nSorry we don't have {flavor}. Here's your Pistachio.")
 
+# Extension: Create a number guessing game using the random module and user input.
+#   Allow the user more than one guess and provide the user feedback on whether their first guess is "too high" or "too low".
+      
+target = random.randint(1,100)
+guess = int(input("Guess a number, 1 - 100: "))
+      
+if guess < target:
+      guess = int(input("Too low, guess again: "))
+elif guess > target:
+      guess = int(input("Too high, guess again: "))
 
+if guess == target:
+      print("You guessed it!  the number was", target)
+else:
+      print(f"You guessed {guess} and the number was {target}")
+      
 input("\nPress enter to exit.")
