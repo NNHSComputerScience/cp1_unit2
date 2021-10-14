@@ -45,13 +45,27 @@ if password == "nnhs":
     
 """
 COMPARISON OPERATORS (aka RELATIONAL OPERATORS) - compare the values on either 
-    sides of them and decide the relation among them.
+    side of them (operands) and determine their relation.
         == (EQUALITY OPERATOR) Evaluates to True if two values are equal.
         != Evaluates to True if two values are not equal.
         >  Evaluates to True if the left value is greater than the right.
         <  Evaluates to True if the right value is greater than the left.
         >= Evaluates to True if the left value is greater than or equal to the right.
         <= Evaluates to True if the right value is greater than or equal to the left.
+        
+Evaluating expressions in console:
+> 7 == 7
+True
+> 7 != 7
+False
+> 7 != 8
+True
+> 3 < 4
+True
+> 3 < 3
+False
+> 3 <= 3
+True
 """
 
 # Challenge: Simple if (BINARY BYPASS - one action associated with an condition)
