@@ -6,8 +6,10 @@
 # The RANDOM MODULE contains functions related to generating pseudorandom numbers.
 #   Documentation here: https://docs.python.org/3/library/random.html
 
-#   Import entire module like this:
+# Import entire module like this:
 import random
+# Import one function from a module like this:
+from random import randint
 
 # randint() function:
 #   Requires 2 int arguments & returns random # between those 2 values (inclusive).
