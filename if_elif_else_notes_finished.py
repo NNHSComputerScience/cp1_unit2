@@ -105,16 +105,17 @@ if coin == 2:
 #   else block executes if condition is false.
 password = input("Please enter your password: ")
 
+# only 1 indented block will execute!; simple ifs would not work
 if password == "nnhs":
     print("\nAccess GRANTED")
-elif password == "NNHS":
+elif password == "nchs":
     print("\nAccess GRANTED")
-elif password == "Nnhs":
+elif password == "mvhs":
+    print("\nAccess GRANTED")
+elif password == "nvhs":
     print("\nAccess GRANTED")   # can have as many elif's as you need!
-else:
+else:  
     print("\nAccess DENIED!")
-
-# What would be a better way to handle variation in the password input?
 
 # Challenge: Ice Cream Challenge
 #   Remember our ice cream algorithm? Recreate your own below using at least 4 flavors, e.g.:
