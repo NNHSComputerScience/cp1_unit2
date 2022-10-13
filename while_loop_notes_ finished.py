@@ -19,14 +19,14 @@ import random
 guess = int(input("How many rolls to get a 5? "))
 rolls = 0
 # !!! INSTRUCTOR NOTE: demonstrate rolling die here first to show infinite loop
-die = 0  # looping variable     
+die = 0  # LOOPING VARIABLE    
 
 # loops if roll is not a 5
-while die != 5:         # loop condition
-    die = random.randint(1,6)   # updating the looping variable
+while die != 5:         # LOOP CONDITION (SENTINEL VALUE of 5)
+    die = random.randint(1,6)   # updating the LOOPING VARIABLE
     print("you rolled a", die)
-    rolls += 1          # end of loop body
-    
+    rolls += 1          # end of LOOP BODY
+
 # Common mistake: not updating the looping variable (results in an INFINITE LOOP)
 
 print("It took", rolls, "rolls to roll a 5!")
