@@ -12,17 +12,41 @@ loop ends and program continues sequentially
 # LOOPING VARIABLE - variable tested in the loop condition; must be updated in the loop body.
 # SENTINEL VALUE - the value that will exit the loop by making the loop condition False.
 '''
+
+import random
+
+# initialize variables
+guess = int(input("How many rolls to get a 5? "))
+rolls = 0
+# !!! INSTRUCTOR NOTE: demonstrate rolling die here first to show infinite loop
+die = 0  # looping variable     
+
+# loops if roll is not a 5
+while die != 5:         # loop condition
+    die = random.randint(1,6)   # updating the looping variable
+    print("you rolled a", die)
+    rolls += 1          # end of loop body
     
-# How to use a counter
+# Common mistake: not updating the looping variable (results in an INFINITE LOOP)
+
+print("It took", rolls, "rolls to roll a 5!")
+
+# check if user's guess was correct
+if guess == rolls:
+    print("Congrats! You guess it right!")
+else:
+    print("I'm sorry, you guessed incorrectly.")
+
+input("\nPress enter to continue.\n")
+
+# How to use a counter (accumulation variable)
 #   Keeps track of number of times loop is executed.
 counter = 0
 print ("Let's count to 100!")
 input("\nPress enter to start the counter.\n")
-while counter < 101:    # loop condition; sentinel value is 101 and greater
-    print ("The count is at: ", counter) # start of loop body
-    counter += 1        # updating the looping variable
-
-# Common mistake: not updating the looping variable (results in an infinite loop)
+while counter < 101: 
+    print ("The count is at: ", counter) 
+    counter += 1        
 
 input("\nPress enter to continue.\n")
 
@@ -60,33 +84,8 @@ while count <= end:
 
 input("\nPress enter to continue.\n")
 
+
 # die_roller Challenge (partner)
-#   Guess how many rolls it takes to roll a 5?
-
-import random
-
-# initialize variables
-guess = int(input("How many rolls to get a 5? "))
-rolls = 0
-die = 0
-
-# loops if roll is not a 5
-while die != 5:
-    die = random.randint(1,6)
-    print("you rolled a", die)
-    rolls += 1      # counts number of rolls
-    
-print("It took", rolls, "rolls to roll a 5!")
-
-# check if user's guess was correct
-if guess == rolls:
-    print("Congrats! You guess it right!")
-else:
-    print("I'm sorry, you guessed incorrectly.")
-
-input("\nPress enter to continue.\n")
-
-# die_roller2 Challenge (partner)
 #   Display how many evens after 5 rolls of a die.
 count = 1
 evens = 0
