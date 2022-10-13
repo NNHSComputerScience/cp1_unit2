@@ -70,12 +70,12 @@ input("\nPress enter to continue.\n")
 #   Print a message to tell the user when the count is half-way done
 #   Try to write it generically so it works for any limit value (not just 100)
 
+print("\nLet's count to 100 by 5's!")
+input("\nPress enter to start the counter.\n")
+
 count = 0
 end = 100
 
-print("\nLet's count to 100 by 5's!")
-input("\nPress enter to start the counter.\n")
- 
 while count <= end:
     print("The count is at: ", count)
     if count == (end / 2):
