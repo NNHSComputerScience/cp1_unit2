@@ -72,7 +72,7 @@ True
 
 # Challenge: Simple if (BINARY BYPASS - one action associated with an condition)
 #   Generate a random number, 1-99, and print "You generated a 2 digit number!"
-#   if the random number generated is greater than 9.
+#       if the random number generated is greater than 9.
 num = random.randint(1,99)
 print(num)
 if num > 9:
@@ -118,7 +118,8 @@ else:
     print("\nAccess DENIED!")
 
 # Challenge: Ice Cream Challenge
-#   Remember our ice cream algorithm? Recreate your own below using at least 4 flavors, e.g.:
+#   Remember our ice cream algorithm? Recreate your own below using at least 4 flavors.
+#   Pseudocode example:
 #   get flavor from user.
 #   if user wants vanilla, "You get Vanilla"
 #   elif user wants chocolate, "You get Chocolate"
