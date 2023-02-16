@@ -35,25 +35,30 @@ print("Roll 1 =", die1)
 print("Roll 2 =", die2)
 
 # -------------------------------------------------------------
-# B) if statement (binary bypass)
-#   Block of code executes if condition is true.
+# B) if statement (BINARY BYPASS - one action associated with a condition)
+#   Indented block of code executes if condition is true.
+#   You are recommended to use 2 or 4 spaces for your indentation, and Python requires that
+#       the entire indented block be at the same indentation level.
 #   CONDITIONAL STATEMENT - A true/false statement that can be evaluated and 
 #       acted upon in one way if true and another if false.
 
 password = input("Please enter your password: ")
 
-if password == "nnhs":  
-    print("\nAccess granted")
-    
+if password == "nnhs":          # if statement
+    print("\nAccess granted")   # indented block
+    print("Proceeding to the NNHS student network...")
+
+print("Back to the regular linear execution.")
+
 """
-COMPARISON OPERATORS (aka RELATIONAL OPERATORS) - compare the values on either 
-    side of them (operands) and determine their relation.
+COMPARISON OPERATORS (aka RELATIONAL OPERATORS) - compares the values (operands) on either 
+    side of an operator and determine their relation.
         == (EQUALITY OPERATOR) Evaluates to True if two values are equal.
-        != Evaluates to True if two values are not equal.
-        >  Evaluates to True if the left value is greater than the right.
-        <  Evaluates to True if the right value is greater than the left.
-        >= Evaluates to True if the left value is greater than or equal to the right.
-        <= Evaluates to True if the right value is greater than or equal to the left.
+        != (INEQUALITY OPERATOR) Evaluates to True if two values are not equal.
+        >  (GREATER THAN) Evaluates to True if the left value is greater than the right.
+        <  (LESS THAN) Evaluates to True if the right value is greater than the left.
+        >= (GREATER THAN EQUAL TO)Evaluates to True if the left value is greater than or equal to the right.
+        <= (LESS THAN EQUAL TO) Evaluates to True if the right value is greater than or equal to the left.
         
 Evaluating expressions in console:
 > 7 == 7
@@ -70,16 +75,16 @@ False
 True
 """
 
-# Challenge: Simple if (BINARY BYPASS - one action associated with an condition)
+# Challenge: Simple if 
 #   Generate a random number, 1-99, and print "You generated a 2 digit number!"
 #       if the random number generated is greater than 9.
 num = random.randint(1,99)
-print(num)
+print("\nThe random number is", num)
 if num > 9:
-    print("\nYou generated a 2 digit number!")
+    print("You generated a 2 digit number!")
 
 # -------------------------------------------------------------
-# C)if - else (BINARY CHOICE - two actions associated with a condition)
+# C)if - else (BINARY CHOICE - two actions associated with one conditional statement)
 #   If block executes if condition is true;
 #   else block executes if condition is false.
 password = input("Please enter your password: ")
@@ -101,11 +106,11 @@ if coin == 2:
 # -------------------------------------------------------------
 # D)if - elif - else (binary bypass & binary choice)
 #   If block executes if condition is true;
-#   elif block executes if condition is true;
+#   elif block(s) executes if condition is true;
 #   else block executes if condition is false.
 password = input("Please enter your password: ")
 
-# only 1 indented block will execute!; simple ifs would not work
+# only 1 indented block can execute!; simple ifs would not work the same way
 if password == "nnhs":
     print("\nAccess GRANTED")
 elif password == "nchs":
@@ -120,11 +125,11 @@ else:
 # Challenge: Ice Cream Challenge
 #   Remember our ice cream algorithm? Recreate your own below using at least 4 flavors.
 #   Pseudocode example:
-#   get flavor from user.
-#   if user wants vanilla, "You get Vanilla"
-#   elif user wants chocolate, "You get Chocolate"
-#   elif user wants strawberry, "You get Strawberry"
-#   else, "Sorry we don't have <insert flavor>. Here's your Pistachio."
+#       get flavor from user.
+#       if user wants vanilla, "You get Vanilla"
+#       elif user wants chocolate, "You get Chocolate"
+#       elif user wants strawberry, "You get Strawberry"
+#       else, "Sorry we don't have <insert flavor>. Here's your Pistachio."
 
 flavor = input("What flavor of ice cream would you like?").title()
 
