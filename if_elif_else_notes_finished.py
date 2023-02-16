@@ -8,23 +8,23 @@
 
 # Import entire module like this:
 import random
-# Import one function from a module like this:
-from random import randint
 
 # randint() function:
 #   Requires 2 int arguments & returns random # between those 2 values (inclusive).
-#   e.g. prints a random number between 1 and 10
-print(random.randint(1,10))
+num = random.randint(1,10)  # 1 -10
+print(num)
 
 # randrange() function:
 #   Requires 1 int argument & returns random # from a range created from 0 to the int (exclusive).
-#   e.g. prints a random number between 0 and 9
-print(random.randrange(10))      # 0-9; numbers start from 0!
-print(random.randrange(10)+1)    # 1-10
+num2 = random.randrange(10)  # 0 - 9
+print(num2)
+num3 = random.randrange(10) + 1  # 1 - 10
+print(num3)
+print(num3) # number remains the same after it is generated
 
 #   Can also call with 2 arguments: start and stop (exclusive)
-#   e.g. prints a random number between 1 and 10
-print(random.randrange(1, 11)
+num4 = random.randrange(1,11)  # 1 - 10
+print(num4)
 
 # Challenge: Dice Challenge 1
 #   Create 2 die variables.  Simulate rolling each die by generating a
