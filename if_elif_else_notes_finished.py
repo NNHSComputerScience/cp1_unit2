@@ -102,6 +102,8 @@ if coin == 1:
     print ("\nHeads")
 if coin == 2:
     print ("\nTails")
+    
+# !!! Instructor's note: Peer Instruction #1
 
 # -------------------------------------------------------------
 # D)if - elif - else (binary bypass & binary choice)
@@ -142,6 +144,8 @@ elif flavor == "Strawberry":
 else:
     print(f"\nSorry we don't have {flavor}. Here's your Pistachio.")
 
+# !!! Instructor's note: Peer Instruction #2
+    
 # Extension: Create a number guessing game using the random module and user input.
 #   Allow the user more than one guess and provide the user feedback on whether their first guess is "too high" or "too low".
       
