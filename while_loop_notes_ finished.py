@@ -29,6 +29,7 @@ while die != 5:         # LOOP CONDITION (SENTINEL VALUE of 5)
 
 # Common mistake: not updating the looping variable (results in an INFINITE LOOP)
 
+# !!! INSTRUCTOR NOTE: after demonstrating simple die rolling loop, turn it into a guessing game
 print("It took", rolls, "rolls to roll a 5!")
 
 # check if user's guess was correct
